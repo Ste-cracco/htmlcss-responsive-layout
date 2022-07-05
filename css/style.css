@@ -17,6 +17,16 @@ img {
     display: flex;
 }
 
+.flex_wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
 /* HEADER */
 
 header {
@@ -74,4 +84,21 @@ header .container_large {
         display: block;
         align-self: center;
     }
+}
+
+/* SECTION 1 */
+
+.row {
+    gap: 20px;
+}
+
+.card {
+    background-color: #B5DDFF;
+    height: 300px;
+    width: calc(calc(100% - 39px) / 3);
+}
+
+.card:first-of-type {
+    background-color: blue;
+    flex-grow: 2;
 }
