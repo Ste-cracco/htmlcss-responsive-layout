@@ -11,6 +11,7 @@ ul, li {
 
 img {
     max-width: 100%;
+    max-height: 100%;
 }
 
 .flex {
@@ -44,7 +45,7 @@ header {
     align-self: center;
 }
 
-i.fa-solid, i.fa-bars  {
+header i.fa-solid, i.fa-bars  {
     display: none;
     align-self: center;
 }
@@ -61,7 +62,7 @@ header .container_large {
 }
 
 .bottone {
-    border-radius: 15px;
+    border-radius: 25px;
 }
 
 .bottone_header {
@@ -70,7 +71,7 @@ header .container_large {
     padding: 5px 10px;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1100px) {
 
     header .container_large {
         width: 100%;
@@ -80,7 +81,7 @@ header .container_large {
         display: none;
     }
 
-    i.fa-solid, i.fa-bars  {
+    header i.fa-solid, i.fa-bars  {
         display: block;
         align-self: center;
     }
@@ -90,15 +91,111 @@ header .container_large {
 
 .row {
     gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 100px;
 }
 
 .card {
     background-color: #B5DDFF;
-    height: 300px;
-    width: calc(calc(100% - 39px) / 3);
+    width: calc(calc(100% - 40px) / 3);
+    border-radius: 25px;
+    padding: 0 20px;
+    align-items: center;
 }
 
-.card:first-of-type {
-    background-color: blue;
+.card_big{
+    width: calc(100% / 2);
     flex-grow: 2;
+    border-radius: 25px;
+    background-color: #B5DDFF;
+    padding: 0 20px;
+}
+
+.card i {
+    color: #0084FD;
+    padding-top: 30px;
+    font-size: 70px;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card_big .col {    
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.card_big img {    
+    max-width: 90%;
+}
+
+.card h3, .card_big h3 {
+    color: #0084FD;
+    font-size: 21px;
+    padding: 20px 0;
+}
+
+.card p, .card_big p {
+    padding-bottom: 30px;
+}
+
+.bottone_apple {
+    background-color: #0084FD;
+    color: white;
+    padding: 10px 15px;
+    width: 180px;
+    text-align: center;
+    margin-bottom: 39px
+}
+
+@media (max-width: 1100px) {
+
+    .container_large {
+        width: 100%;
+    }
+
+    .card_big {
+        flex-direction: column;
+    }
+
+    .card_big img {
+      max-width: 50%;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .container_large {
+        width: 100%;
+    }
+
+    .card_big {
+        flex-direction: column;
+    }
+
+    .card_big img {
+        width: 100%;
+      }
+}
+
+@media (max-width: 600px) {
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+    .card_big, .card {
+        width: 100%;
+    }
+
+    .card_big .col {
+        align-items: center;
+    }
+
+    .card p, .card_big p {
+        font-size: 13px;
+        text-align: center;
+    }
+
 }
