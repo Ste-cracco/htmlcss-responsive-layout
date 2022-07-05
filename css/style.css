@@ -460,7 +460,7 @@ i.absolute {
     font-size: 60px;
 }
 
-.col-2 p {
+.section_5 .col-2 p {
     color: #9792E4;
     font-size: 17px;
     font-weight: 700;
@@ -504,6 +504,7 @@ i.absolute {
     gap: 30px;
     align-items: center;
     color: white;
+    margin-bottom: 0;
 }
 
 .section_6 span {
@@ -536,4 +537,24 @@ i.absolute {
     color: #9792E4;
     padding: 13px 44px;
     font-size: 12px;
+}
+
+/* FOOTER */
+footer {
+    background-color: #333333;
+    color: white;
+}
+
+footer .row {
+    gap: 30px;
+    margin: 0;
+    font-size: 12px;
+    text-align: center;
+    padding: 35px 0;
+    font-weight: 300;
+}
+
+footer span {
+    color: #9792E4;
+    text-decoration: underline;
 }
